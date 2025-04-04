@@ -80,7 +80,6 @@ fun HomeScreen(innerPadding: PaddingValues, navController: NavController) {
                 .padding(innerPadding)
                 .padding(horizontal = 12.dp)
         ) {
-            // Icono de perfil alineado a la derecha
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
@@ -97,8 +96,6 @@ fun HomeScreen(innerPadding: PaddingValues, navController: NavController) {
                     )
                 }
             }
-
-            // Barra de búsqueda
             OutlinedTextField(
                 value = searchQuery,
                 onValueChange = { searchQuery = it },
@@ -113,8 +110,6 @@ fun HomeScreen(innerPadding: PaddingValues, navController: NavController) {
             val filteredProducts = products.filter {
                 it.title.contains(searchQuery, ignoreCase = true)
             }
-
-            // Productos en estilo grid
             LazyVerticalGrid(
                 columns = GridCells.Fixed(2),
                 verticalArrangement = Arrangement.spacedBy(12.dp),

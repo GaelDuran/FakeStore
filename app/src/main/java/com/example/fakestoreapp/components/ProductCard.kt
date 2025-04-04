@@ -48,7 +48,7 @@ fun ProductCard(product: Product, onClick: (Product) -> Unit) {
                 painter = rememberAsyncImagePainter(product.image),
                 contentDescription = null,
                 modifier = Modifier
-                    .height(200.dp)  // Ajusta la altura aquí
+                    .height(200.dp)
                     .fillMaxWidth()
                     .clip(RoundedCornerShape(12.dp)),
                 contentScale = ContentScale.Crop

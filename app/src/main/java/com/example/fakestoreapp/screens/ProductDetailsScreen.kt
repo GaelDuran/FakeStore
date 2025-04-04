@@ -58,7 +58,6 @@ fun ProductDetailScreen(
             )
         )
     }
-
     LaunchedEffect(true) {
         scope.launch {
             try {
@@ -73,8 +72,6 @@ fun ProductDetailScreen(
             }
         }
     }
-
-    // Scrollable content
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -132,6 +129,6 @@ fun ProductDetailScreen(
             Text(text = "Añadir al carrito", color = Color.White, fontWeight = FontWeight.Bold)
         }
 
-        Spacer(modifier = Modifier.height(20.dp)) // espacio al final
+        Spacer(modifier = Modifier.height(20.dp))
     }
 }
